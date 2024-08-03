@@ -21,9 +21,6 @@ const Navbar = () => {
             <Link href="/apply" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-mit-red transition duration-300">
               Apply
             </Link>
-            <Link href="/contact" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-mit-red transition duration-300">
-              Contact
-            </Link>
           </div>
         </div>
       </div>

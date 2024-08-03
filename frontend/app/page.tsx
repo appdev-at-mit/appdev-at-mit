@@ -9,7 +9,7 @@ export default function Home() {
           Full Stack @ MIT
         </h1>
         <p className="text-lg mb-8 text-gray-600">
-          We’re a student-run project team at MIT that builds
+          We're a student-run project team at MIT that builds
           products to improve the lives of our community.
         </p>
       </div>
