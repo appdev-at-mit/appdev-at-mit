@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center">
           <p className="text-gray-700 text-center">Full Stack @ MIT © 2024.</p>
           <p className="text-gray-700 text-center">
-            Made with <span className="text-red-600">❤️</span> by Hailey Pan.
+            Made with <span className="text-red-600">❤️</span> by Hailey, Josie, and Kaitlyn.
           </p>
         </div>
       </div>
