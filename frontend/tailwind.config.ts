@@ -18,6 +18,7 @@ const config: Config = {
         'light-blue': '#A5E4E1',
         'light-orange': '#FCDDBC',
         'salmon': '#EF959D',
+        'hover-blue': '#209EA3'
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
