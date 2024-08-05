@@ -1,25 +1,29 @@
 import React from "react";
 import TeamMember from "../components/TeamMember";
 import teamMembers from "./teamMembers";
+import Image from "next/image";
 
 const Team: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-32 md:mx-20 mx-6 my-24">
-      <div className="text-left max-w-2xl">
-        <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
-        <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
-          The people behind the products
-        </h3>
-        <p className="text-md my-5 text-gray-600">
-          Our products wouldn't exist without the commitment and hard work of
-          our members. We recruit the best rising students at MIT to build the
-          next generation of products. We structure our club to optimize for
-          education and mobility between technologies and teams. At the end of
-          the day, we’re a family that builds, learns, and plays together.
-        </p>
+    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-32 md:mx-20 mx-6 my-20">
+      <div className="flex flex-row items-center">
+        <div className="text-left max-w-2xl">
+          <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
+          <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
+            The people behind the products
+          </h3>
+          <p className="text-md my-5 text-gray-600">
+            Our products wouldn't exist without the commitment and hard work of
+            our members. We recruit the best rising students at MIT to build the
+            next generation of products. We structure our club to optimize for
+            education and mobility between technologies and teams. At the end of
+            the day, we’re a family that builds, learns, and plays together.
+          </p>
+        </div>
+        <Image src="/images/collaboration.svg" alt="collaboration.svg" width={600} height={250} />
       </div>
 
-      <div className="md:mt-32 mt-20">
+      <div className="md:mt-24 mt-20">
         <h3 className="text-2xl font-semibold my-3 text-gray-800 text-center">
           Executive Team
         </h3>
@@ -46,7 +50,7 @@ const Team: React.FC = () => {
           Want to join?
         </h3>
         <a href="/apply">
-          <button className="text-lg my-3 text-gray-600 border border-gray-600 text-center justify-center px-5 py-1 rounded-full mx-auto transition duration-200 ease-in-out hover:bg-gray-200">
+          <button className="text-lg my-3 text-gray-600 border border-gray-600 text-center justify-center px-5 py-1 rounded-full mx-auto transition duration-300 ease-in-out hover:text-dark-blue hover:border-dark-blue">
             Apply now!
           </button>
         </a>
