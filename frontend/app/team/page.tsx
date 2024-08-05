@@ -45,7 +45,7 @@ const Team: React.FC = () => {
           Want to join?
         </h3>
         <a href="/apply">
-          <button className="text-lg my-3 text-gray-600 border border-gray-600 text-center justify-center px-5 py-1 rounded-full mx-auto">
+          <button className="text-lg my-3 text-gray-600 border border-gray-600 text-center justify-center px-5 py-1 rounded-full mx-auto transition duration-200 ease-in-out hover:bg-gray-200">
             Apply now!
           </button>
         </a>
