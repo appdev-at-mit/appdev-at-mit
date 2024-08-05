@@ -21,11 +21,11 @@ const TeamMember: FC<TeamMemberProps> = ({ name, roles, year, imageSrc }) => {
       </div>
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-900">{name}</h2>
-        <div className="flex flex-wrap space-x-2 mt-2">
+        <div className="flex flex-wrap mt-2 space-x-2">
           {roles.map((role, index) => (
             <span
               key={index}
-              className="inline-block bg-light-orange text-gray-800 text-sm px-2 rounded-md"
+              className="inline-block bg-light-orange text-gray-800 text-sm px-1 rounded-md my-1"
             >
               {role}
             </span>

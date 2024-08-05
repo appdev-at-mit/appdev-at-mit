@@ -6,21 +6,29 @@ import Image from "next/image";
 const Team: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-32 md:mx-20 mx-6 my-20">
-      <div className="flex flex-row items-center">
+      <div className="flex flex-col md:flex-row items-center">
         <div className="text-left max-w-2xl">
           <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
           <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
-            The people behind the products
+            Working behind the scenes
           </h3>
           <p className="text-md my-5 text-gray-600">
-            Our products wouldn't exist without the commitment and hard work of
-            our members. We recruit the best rising students at MIT to build the
-            next generation of products. We structure our club to optimize for
-            education and mobility between technologies and teams. At the end of
-            the day, we’re a family that builds, learns, and plays together.
+            Our products are built from the ground up by our members. Every
+            year, we recruit a diverse team of engineers and designers to
+            further our mission of improving the lives of the MIT community. We
+            ensure that all members have the unique opportunity to develop their
+            technical and soft skills through practical projects that have real
+            impact.
           </p>
         </div>
-        <Image src="/images/collaboration.svg" alt="collaboration.svg" width={600} height={250} />
+        <div className="mt-8 md:mt-0 md:ml-8">
+          <Image
+            src="/images/collaboration.svg"
+            alt="collaboration.svg"
+            width={600}
+            height={250}
+          />
+        </div>
       </div>
 
       <div className="md:mt-24 mt-20">
@@ -28,9 +36,9 @@ const Team: React.FC = () => {
           Executive Team
         </h3>
         <p className="mb-12 my-3 text-gray-600 text-center lg:mx-32 xl:mx-48">
-          Directors make FS@MIT who we are. They manage both the technical and
-          business sides of FS@ MIT to keep us growing and creating new
-          products.
+          Exec is the heart and soul of fs@MIT. They manage all
+          initiatives, spanning both technical and business aspects, to keep us
+          growing.
         </p>
 
         <div className="grid gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
