@@ -17,7 +17,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="max-w-sm mx-auto bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+    <div className="max-w-md mx-auto bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
       <Image
         src={imageSrc}
         alt={name}
@@ -30,13 +30,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           {roles.map((role, index) => (
             <span
               key={index}
-              className="inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full"
+              className="inline-block bg-light-orange text-gray-800 text-sm px-2 rounded-md"
             >
               {role}
             </span>
           ))}
         </div>
-        <p className="text-gray-600 mt-4">Class of {year}</p>
+        <p className="text-gray-600 mt-4 text-sm">Class of {year}</p>
       </div>
     </div>
   );

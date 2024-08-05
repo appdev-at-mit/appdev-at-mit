@@ -11,22 +11,24 @@ const Team: React.FC = () => {
         </h3>
         <p className="text-md my-5 text-gray-600">
           Our products wouldn't exist without the commitment and hard work of
-          our members. We recruit the best rising students at Penn to build the
+          our members. We recruit the best rising students at MIT to build the
           next generation of products. We structure our club to optimize for
           education and mobility between technologies and teams. At the end of
           the day, we’re a family that builds, learns, and plays together.
         </p>
       </div>
 
-      <div className="mt-8">
-        <h3 className="text-2xl font-semibold my-3 text-gray-800">Executive Team</h3>
-        <p className="mb-6 max-w-2xl my-3 text-gray-600">
+      <div className="mt-10">
+        <h3 className="text-2xl font-semibold my-3 text-gray-800">
+          Executive Team
+        </h3>
+        <p className="mb-10 max-w-2xl my-3 text-gray-600">
           Directors make FS@MIT who we are. They manage both the technical and
-          business sides of Penn Labs to keep us growing and creating new
+          business sides of  FS@ MIT to keep us growing and creating new
           products.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {teamMembers.map((member, index) => (
             <TeamMember
               key={index}
