@@ -24,7 +24,7 @@ const Team: React.FC = () => {
         </h3>
         <p className="mb-12 mx-48 my-3 text-gray-600 text-center">
           Directors make FS@MIT who we are. They manage both the technical and
-          business sides of  FS@ MIT to keep us growing and creating new
+          business sides of FS@ MIT to keep us growing and creating new
           products.
         </p>
 
@@ -39,6 +39,16 @@ const Team: React.FC = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="items-center text-center mt-32">
+        <h3 className="text-2xl font-semibold my-3 text-gray-800">
+          Want to join?
+        </h3>
+        <a href="/apply">
+          <button className="text-lg my-3 text-gray-600 border border-gray-600 text-center justify-center px-5 py-1 rounded-full mx-auto">
+            Apply now!
+          </button>
+        </a>
       </div>
     </div>
   );
