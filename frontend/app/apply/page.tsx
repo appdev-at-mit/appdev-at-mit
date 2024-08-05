@@ -8,7 +8,7 @@ const FormPage = () => {
       </h1>
       <p className="text-center mb-8 mt-2 text-black">
         Apply to join Full Stack @ MIT. Applications are open any time during the school year.
-        We meet on ____ from ___ to ___.
+        We meet on Sunday from 11AM - 12PM.
       </p>
       <iframe
         src={iframeSrc}
