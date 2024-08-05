@@ -16,7 +16,7 @@ const teamMembers: TeamMember[] = [
     name: "Josie Wang",
     roles: ["Backend Engineer", "Frontend Engineer"],
     year: "2027",
-    imageSrc: "/people/hailey-pan.jpg",
+    imageSrc: "/people/josie-wang.jpg",
   },
   {
     name: "Kaitlyn Zhang",
