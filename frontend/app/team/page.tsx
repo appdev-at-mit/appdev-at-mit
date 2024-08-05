@@ -1,9 +1,10 @@
+import React from "react";
 import TeamMember from "../components/TeamMember";
 import teamMembers from "./teamMembers";
 
 const Team: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col mx-72 my-24">
+    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-32 md:mx-20 mx-6 my-24">
       <div className="text-left max-w-2xl">
         <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
         <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
@@ -18,17 +19,17 @@ const Team: React.FC = () => {
         </p>
       </div>
 
-      <div className="mt-32">
+      <div className="md:mt-32 mt-20">
         <h3 className="text-2xl font-semibold my-3 text-gray-800 text-center">
           Executive Team
         </h3>
-        <p className="mb-12 mx-48 my-3 text-gray-600 text-center">
+        <p className="mb-12 my-3 text-gray-600 text-center lg:mx-32 xl:mx-48">
           Directors make FS@MIT who we are. They manage both the technical and
           business sides of FS@ MIT to keep us growing and creating new
           products.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member, index) => (
             <TeamMember
               key={index}
@@ -40,7 +41,7 @@ const Team: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="items-center text-center mt-32">
+      <div className="items-center text-center md:mt-32 mt-20">
         <h3 className="text-2xl font-semibold my-3 text-gray-800">
           Want to join?
         </h3>
