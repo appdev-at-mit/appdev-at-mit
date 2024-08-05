@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FC } from "react";
 
 interface TeamMemberProps {
   name: string;
@@ -7,23 +8,17 @@ interface TeamMemberProps {
   imageSrc: string;
 }
 
-const DEFAULT_IMAGE_WIDTH = 300;
-const DEFAULT_IMAGE_HEIGHT = 300;
-
-const TeamMember: React.FC<TeamMemberProps> = ({
-  name,
-  roles,
-  year,
-  imageSrc,
-}) => {
+const TeamMember: FC<TeamMemberProps> = ({ name, roles, year, imageSrc }) => {
   return (
-    <div className="max-w-md mx-auto bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
-      <Image
-        src={imageSrc}
-        alt={name}
-        width={DEFAULT_IMAGE_WIDTH}
-        height={DEFAULT_IMAGE_HEIGHT}
-      />
+    <div className="max-w-md mx-auto bg-white border border-gray-300 rounded-lg overflow-hidden hover:shadow-custom">
+      <div className="relative w-full" style={{ paddingTop: '100%' }}>
+        <Image
+          src={imageSrc}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-900">{name}</h2>
         <div className="flex flex-wrap space-x-2 mt-2">

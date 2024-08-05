@@ -22,6 +22,9 @@ const config: Config = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
+      boxShadow: {
+        'custom': '0px 0px 18px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [],
