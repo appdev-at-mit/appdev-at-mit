@@ -10,11 +10,11 @@ const Team: React.FC = () => {
         <div className="text-left max-w-2xl">
           <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
           <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
-            Working behind the scenes
+            Putting in the blood, sweat, and tears
           </h3>
           <p className="text-md my-5 text-gray-600">
-            Our products are built from the ground up by our members. Every
-            year, we recruit a diverse team of engineers and designers to
+            Our team builds each app from the ground up. Every
+            year, we recruit a diverse team of engineers, designers, and leaders to
             further our mission of improving the lives of the MIT community. We
             ensure that all members have the unique opportunity to develop their
             technical and soft skills through practical projects that have real
