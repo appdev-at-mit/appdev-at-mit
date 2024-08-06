@@ -5,42 +5,42 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Section 1 */}
-      <section className="flex flex-wrap px-6 py-12 ml-36 mt-10 mb-14">
-        <div className="flex-1 relative mt-4">
-          <h1 className="text-5xl font-extrabold mb-4 leading-normal">
-            Create <span className="text-dark-blue">software</span> <br></br> solutions
-          </h1>
-          <p className="text-xl mb-8 text-gray-700">
-            for the MIT community and beyond
-          </p>
-          <div>
-            <Link href="/apply">
-              <button className="bg-dark-blue text-white text-xl w-36 py-2 mr-4 rounded-full font-medium hover:bg-hover-blue transition-colors duration-300">
-                Join us
-              </button>
-            </Link>
-            <Link href="/products">
-              <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-36 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
-                Products
-              </button>
-            </Link>
+      <section className="flex flex-wrap px-6 py-12 mt-10 mb-8 justify-center items-center">
+        <div className="flex items-center">
+          <div className="relative mt-4 mr-48">
+            <h1 className="text-5xl font-extrabold mb-4 leading-normal">
+              Create <span className="text-dark-blue">software</span> <br /> solutions
+            </h1>
+            <p className="text-xl mb-8 text-gray-700">
+              for the MIT community and beyond
+            </p>
+            <div>
+              <Link href="/apply">
+                <button className="bg-dark-blue text-white text-xl w-36 py-2 mr-4 rounded-full font-medium hover:bg-hover-blue transition-colors duration-300">
+                  Join us
+                </button>
+              </Link>
+              <Link href="/products">
+                <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-36 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+                  Products
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="flex-1 flex relative mr-24">
-          <div>
+          <div className="relative">
             <Image
               src="/images/site.svg"
               alt="site.svg"
               width={540}
               height={360}
-              className="drop-shadow-lg absolute left-10 z-0"
+              className="drop-shadow-lg"
             />
             <Image
               src="/images/code.svg"
               alt="code.svg"
               width={375}
               height={250}
-              className="drop-shadow-lg absolute top-36 right-80 z-10"
+              className="drop-shadow-lg absolute top-36 -left-20"
             />
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Home() {
           <p className="text-lg mb-8">
             Like what we do? Full Stack @ MIT needs your support to provide full funding for student projects.
           </p>
-          <Link href="/products">
+          <Link href="/support">
             <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
               Sponsor us
             </button>
