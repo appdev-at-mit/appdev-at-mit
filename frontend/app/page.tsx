@@ -9,7 +9,8 @@ export default function Home() {
         <div className="flex items-center">
           <div className="relative mt-4 mr-48">
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
-              Create <span className="text-dark-blue">software</span> <br /> solutions
+              Create <span className="text-dark-blue">software</span> <br />{" "}
+              solutions
             </h1>
             <p className="text-xl mb-8 text-gray-700">
               for the MIT community and beyond
@@ -59,7 +60,11 @@ export default function Home() {
               className="mb-8 drop-shadow-lg"
             />
             <h4 className="text-xl font-semibold m-2">Find summer housing</h4>
-            <p className="text-base font-light w-96">Are you looking for summer housing near MIT or your internship? This project will let you find affordable accommodations and connect you with other MIT students living in the same area.</p>
+            <p className="text-base font-light w-96">
+              Are you looking for summer housing near MIT or your internship?
+              This project will let you find affordable accommodations and
+              connect you with other MIT students living in the same area.
+            </p>
           </div>
           <div className="m-4">
             <Image
@@ -70,7 +75,11 @@ export default function Home() {
               className="mb-8 drop-shadow-lg"
             />
             <h4 className="text-xl font-semibold m-2">OH queue</h4>
-            <p className="text-base font-light w-96">Professors and TAs can use the OH queue website to keep track of students waiting in the OH. Students can see how long the queue is and if office hours have changed locations or been canceled.</p>
+            <p className="text-base font-light w-96">
+              Professors and TAs can use the OH queue website to keep track of
+              students waiting in the OH. Students can see how long the queue is
+              and if office hours have changed locations or been canceled.
+            </p>
           </div>
           <div className="m-4">
             <Image
@@ -81,7 +90,11 @@ export default function Home() {
               className="mb-8 drop-shadow-lg"
             />
             <h4 className="text-xl font-semibold m-2">Carpool / Rideshare</h4>
-            <p className="text-base font-light w-96">Uber/Lyft to the airport is too expensive? Find other MIT students who are going to the same location as you and share a ride with them.</p>
+            <p className="text-base font-light w-96">
+              Uber/Lyft to the airport is too expensive? Find other MIT students
+              who are going to the same location as you and share a ride with
+              them.
+            </p>
           </div>
         </div>
         <Link href="/products">
@@ -94,13 +107,21 @@ export default function Home() {
       {/* Section 3 */}
       <section className="bg-light-blue px-6 py-12">
         <div className="max-w-4xl mx-auto text-left">
-          <h2 className="text-3xl font-extrabold mb-6 text-center">What we do</h2>
+          <h2 className="text-3xl font-extrabold mb-6 text-center">
+            What we do
+          </h2>
           <p className="text-lg mb-8 text-center leading-relaxed">
-          Interested in contributing to our upcoming projects? Have a project idea of your own? <br></br>
-          Full Stack @ MIT is a student-run club that provides <span className="bg-salmon font-bold">full funding</span> to its members for creating <br></br>
-          <span className="bg-salmon font-bold">software-based products</span>. Work with your friends and other club members to create software meant for the MIT community or a broader audience.
-          <br></br> <br></br>
-          Full Stack @ MIT hosts workshops for students who are new to web development. Anyone can join!
+            Interested in contributing to our upcoming projects? Have a project
+            idea of your own? <br></br>
+            Full Stack @ MIT is a student-run club that provides{" "}
+            <span className="bg-salmon font-bold">full funding</span> to its
+            members for creating <br></br>
+            <span className="bg-salmon font-bold">software-based products</span>
+            . Work with your friends and other club members to create software
+            meant for the MIT community or a broader audience.
+            <br></br> <br></br>
+            Full Stack @ MIT hosts workshops for students who are new to web
+            development. Anyone can join!
           </p>
         </div>
         <div className="text-center">
@@ -116,7 +137,8 @@ export default function Home() {
       <section className="px-6 py-12">
         <div className="text-center">
           <p className="text-lg mb-8">
-            Like what we do? Full Stack @ MIT needs your support to provide full funding for student projects.
+            Like what we do? Full Stack @ MIT needs your support to provide full
+            funding for student projects.
           </p>
           <Link href="/support">
             <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
