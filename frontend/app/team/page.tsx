@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Team: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-32 md:mx-20 mx-6 my-20">
+    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 my-20">
       <div className="flex flex-col md:flex-row items-center">
         <div className="text-left max-w-2xl">
           <h2 className="text-4xl font-bold my-3 text-gray-800">Our Team</h2>
           <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
             Putting in the blood, sweat, and tears
           </h3>
-          <p className="text-md my-5 text-gray-600">
+          <p className="text-md my-5 text-gray-700">
             Our team builds each app from the ground up. Every
             year, we recruit a diverse team of engineers, designers, and leaders to
             further our mission of improving the lives of the MIT community. We

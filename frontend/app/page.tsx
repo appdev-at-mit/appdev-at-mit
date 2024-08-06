@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* Section 2 */}
       <section className="text-center px-6 py-12">
-        <h2 className="text-3xl font-extrabold mb-6">Upcoming Projects</h2>
+        <h2 className="text-3xl font-bold mb-6">Upcoming Projects</h2>
         <div className="flex flex-wrap justify-center mb-8">
           <div className="m-4">
             <Image
@@ -107,7 +107,7 @@ export default function Home() {
       {/* Section 3 */}
       <section className="bg-light-blue px-6 py-12">
         <div className="max-w-4xl mx-auto text-left">
-          <h2 className="text-3xl font-extrabold mb-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             What we do
           </h2>
           <p className="text-lg mb-8 text-center leading-relaxed">
