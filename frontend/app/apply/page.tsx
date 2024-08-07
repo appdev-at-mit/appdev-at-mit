@@ -2,7 +2,7 @@ const FormPage = () => {
   const iframeSrc = 'https://docs.google.com/forms/d/e/1FAIpQLSd49UGgVAe1m4ilEHosP3fV0rmZp6QE2XiSnOcJzL5o7_j9Wg/viewform?embedded=true';
 
   return (
-    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 my-20">
+    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
       <h1 className="text-4xl font-bold my-3 text-gray-800">
         Apply
       </h1>
@@ -12,10 +12,10 @@ const FormPage = () => {
       </p>
       <iframe
         src={iframeSrc}
-        width="640"
+        width="100%"
         height="1650"
+        className="md:w-[640px] mx-auto"
         title="Google Form"
-        className="mx-auto"
       >
         Loading…
       </iframe>

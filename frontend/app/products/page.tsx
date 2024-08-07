@@ -6,7 +6,7 @@ import { featuredProjects } from "./projectDetails";
 
 const Products: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 my-20">
+    <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
       <div className="flex flex-col md:flex-row items-center">
         <div className="text-left max-w-2xl">
           <h2 className="text-4xl font-bold my-3 text-gray-800">Products</h2>

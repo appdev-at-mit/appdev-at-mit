@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Section 1 */}
-      <section className="flex flex-wrap px-6 py-12 mt-10 mb-8 justify-center items-center">
+      <section className="flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center">
         <div className="flex items-center">
-          <div className="relative mt-4 mr-48">
+          <div className="relative mt-4 lg:mr-48">
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
               Create <span className="text-dark-blue">software</span> <br />{" "}
               solutions
@@ -28,7 +28,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <Image
               src="/images/site.svg"
               alt="site.svg"
