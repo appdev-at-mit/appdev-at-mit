@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
     name: "Kaitlyn Zhang",
     roles: ["Backend Engineer", "Frontend Engineer"],
     year: "2027",
-    imageSrc: "/people/hailey-pan.jpg",
+    imageSrc: "/people/temp-pic.jpg",
   },
 ];
 
