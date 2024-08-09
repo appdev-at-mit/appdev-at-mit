@@ -14,9 +14,9 @@ const Products: React.FC = () => {
             To better the MIT community
           </h3>
           <p className="text-md my-5 text-gray-700">
-            Our products are our pride and joy. We're building apps to help
+            Our products are our pride and joy. We&apos;re building apps to help
             students plan their academic career, find places to live, get around
-            campus, and so much more. Each app is inspired by a problem we've
+            campus, and so much more. Each app is inspired by a problem we&apos;ve
             seen in our community and are motivated to solve.
           </p>
         </div>
