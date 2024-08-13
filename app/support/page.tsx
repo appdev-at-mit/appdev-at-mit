@@ -86,7 +86,7 @@ const rows = [
 
 export default function Support() {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
 
         <h1 className="text-4xl font-bold my-3 text-gray-800">Support Us ❤️</h1>
 
