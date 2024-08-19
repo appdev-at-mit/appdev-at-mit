@@ -85,53 +85,51 @@ const rows = [
 ];
 
 export default function Support() {
-    return (
-      <div className="flex flex-col items-center justify-center xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
+  return (
+    <div className="flex flex-col items-center justify-center xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
 
-        <h1 className="text-4xl font-bold my-3 text-gray-800">Support Us ❤️</h1>
+      <h1 className="text-4xl font-bold my-3 text-gray-800 text-center">Support Us ❤️</h1>
 
-        <p className="mb-8 mt-2 text-gray-700 text-md">Join our mission in building community & fostering growth.</p>
+      <p className="mb-8 mt-2 text-gray-700 text-md text-center">Join our mission in building community & fostering growth.</p>
 
-        <h2 className="text-3xl font-bold"> Sponsorship Tiers </h2>
+      <h2 className="text-3xl font-bold text-center"> Sponsorship Tiers </h2>
 
+      <div className="w-full overflow-x-auto">
         <Table
           selectionMode="none"
           className="mb-8 mt-2 text-gray-700 text-md"
           isStriped
           cellPadding={24}
-          width={10}
         >
-  <TableHeader columns={columns}>
-    {(column) => (
-      <TableColumn
-        key={column.key}
-        className="text-md text-question text-center font-bold min-w-48"
-      >
-        {column.label}
-      </TableColumn>
-    )}
-  </TableHeader>
-  <TableBody items={rows}>
-    {(item) => (
-      <TableRow
-        key={item.key}
-        className="text-center"
-      >
-        {(columnKey) => (
-          <TableCell className="text-center">
-            {getKeyValue(item, columnKey)}
-          </TableCell>
-        )}
-      </TableRow>
-    )}
-  </TableBody>
-</Table>
-
-<p> We’re open to discussing further methods of collaboration - reach out to us at fullstack@mit.edu! </p>
-       
+          <TableHeader columns={columns}>
+            {(column) => (
+              <TableColumn
+                key={column.key}
+                className="text-md text-question text-center font-bold min-w-48"
+              >
+                {column.label}
+              </TableColumn>
+            )}
+          </TableHeader>
+          <TableBody items={rows}>
+            {(item) => (
+              <TableRow
+                key={item.key}
+                className="text-center"
+              >
+                {(columnKey) => (
+                  <TableCell className="text-center">
+                    {getKeyValue(item, columnKey)}
+                  </TableCell>
+                )}
+              </TableRow>
+            )}
+          </TableBody>
+        </Table>
       </div>
 
-      
-    )
-  }
-  
+      <p className="text-center">We’re open to discussing further methods of collaboration - reach out to us at fullstack@mit.edu!</p>
+       
+    </div>
+  )
+}
