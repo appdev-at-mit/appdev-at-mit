@@ -3,7 +3,7 @@ const nextConfig = {
     basePath: '',
     assetPrefix: '',
     trailingSlash: true,
-    output: 'export',
+    // output: 'export',
   };
   
   export default nextConfig;
