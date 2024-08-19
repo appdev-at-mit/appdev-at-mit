@@ -1,5 +1,5 @@
-'use client'
-import React from "react"
+"use client";
+import React from "react";
 import {
   Table,
   TableHeader,
@@ -7,7 +7,7 @@ import {
   TableColumn,
   TableRow,
   TableCell,
-  getKeyValue
+  getKeyValue,
 } from "@nextui-org/table";
 
 const columns = [
@@ -37,6 +37,7 @@ const rows = [
   {
     key: "1",
     benefit: "Recognition on our website",
+    subtitle: "Logo placement on sponsorship materials",
     bronze: "✅",
     silver: "✅",
     gold: "✅",
@@ -44,7 +45,8 @@ const rows = [
   },
   {
     key: "2",
-    benefit: "Campus-wide marketing & publicity",
+    benefit: "Campus-wide publicity",
+    subtitle: "Support and usage of company products on campus",
     bronze: "✅",
     silver: "✅",
     gold: "✅",
@@ -52,7 +54,8 @@ const rows = [
   },
   {
     key: "3",
-    benefit: "Access to our mailing list",
+    benefit: "Resume book access",
+    subtitle: "Access to our talent pipeline for recruitment",
     bronze: "-",
     silver: "✅",
     gold: "✅",
@@ -60,26 +63,31 @@ const rows = [
   },
   {
     key: "4",
-    benefit: "Resume book access",
+    benefit: "Flagship Initiative Co-Sponsor",
+    subtitle: "Company-specific publicity and swag distribution",
     bronze: "-",
-    silver: "✅",
+    silver: "-",
     gold: "✅",
     platinum: "✅",
   },
   {
     key: "5",
-    benefit: "1 Company-specific event per year",
+    benefit: "Host a company event",
+    subtitle:
+      "One per semester; Includes workshops, hackathons, speaker panels",
     bronze: "-",
-    silver: "✅",
+    silver: "-",
     gold: "✅",
     platinum: "✅",
   },
   {
     key: "6",
-    benefit: "Multiple company-specific events per year",
+    benefit: "Host multiple events",
+    subtitle:
+      "Up to three per semester with priority scheduling; Every additional event costs $200",
     bronze: "-",
-    silver: "✅",
-    gold: "✅",
+    silver: "-",
+    gold: "-",
     platinum: "✅",
   },
 ];
@@ -87,10 +95,21 @@ const rows = [
 export default function Support() {
   return (
     <div className="flex flex-col items-center justify-center xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
+      <h1 className="text-4xl font-bold my-3 text-gray-800 text-center">
+        Support Us ❤️
+      </h1>
 
-      <h1 className="text-4xl font-bold my-3 text-gray-800 text-center">Support Us ❤️</h1>
+      <p className="mb-8 mt-2 text-gray-700 text-lg font-semibold text-center">
+        Join us in making an impact on our communities.
+      </p>
 
-      <p className="mb-8 mt-2 text-gray-700 text-md text-center">Join our mission in building community & fostering growth.</p>
+      <p className="xl:mx-32 lg:mx-24 md:mx-16 mx-6 mb-20 mt-2 text-gray-700 text-md text-center">
+        <span className="font-bold">All sponsorship contributions</span> are
+        directly reinvested into the club, supporting our mission to empower the
+        community through technology. These funds enable us to conduct user
+        research, obtain software licenses, and expand our outreach and
+        marketing efforts.
+      </p>
 
       <h2 className="text-3xl font-bold text-center"> Sponsorship Tiers </h2>
 
@@ -113,13 +132,15 @@ export default function Support() {
           </TableHeader>
           <TableBody items={rows}>
             {(item) => (
-              <TableRow
-                key={item.key}
-                className="text-center"
-              >
+              <TableRow key={item.key} className="text-center">
                 {(columnKey) => (
                   <TableCell className="text-center">
-                    {getKeyValue(item, columnKey)}
+                    <div>
+                      <p>{getKeyValue(item, columnKey)}</p>
+                      {columnKey === "benefit" && (
+                        <p className="text-sm text-gray-500">{item.subtitle}</p>
+                      )}
+                    </div>
                   </TableCell>
                 )}
               </TableRow>
@@ -128,8 +149,10 @@ export default function Support() {
         </Table>
       </div>
 
-      <p className="text-center">We’re open to discussing further methods of collaboration - reach out to us at fullstack@mit.edu!</p>
-       
+      <p className="mt-8 text-center">
+        We’re open to discussing further methods of collaboration - reach out to
+        us at fullstack@mit.edu!
+      </p>
     </div>
-  )
+  );
 }
