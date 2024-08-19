@@ -36,7 +36,7 @@ const Team: React.FC = () => {
           Executive Team
         </h3>
         <p className="mb-12 my-3 text-gray-600 text-center lg:mx-32 xl:mx-48">
-          Exec is the heart and soul of fs@MIT. They manage all
+          Exec is the heart and soul of Full Stack @ MIT. They manage all
           initiatives, spanning both technical and business aspects, to keep us
           growing.
         </p>
