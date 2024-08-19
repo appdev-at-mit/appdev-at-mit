@@ -8,10 +8,10 @@ const Footer = () => {
           <div>
             <p className="text-gray-500 text-left text-md mb-1">Full Stack @ MIT © 2024.</p>
             <p className="text-gray-500 text-left text-sm">
-              Made with <span className="text-red-600">❤️</span> by Hailey, Josie, and Kaitlyn.
+              Made with <span className="text-red-600">❤️</span> by Full Stack @ MIT.
             </p>
           </div>
-          <div className="flex space-x-4 mt-4 sm:mt-0">
+          {/* <div className="flex space-x-4 mt-4 sm:mt-0">
             <a href="https://www.instagram.com/mitfullstack/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-gray-500 hover:text-gray-900" size={24} />
             </a>
@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="mailto:contact@mitfullstack.org">
               <FaEnvelope className="text-gray-500 hover:text-gray-900" size={24} />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
