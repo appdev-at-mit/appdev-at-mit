@@ -20,7 +20,7 @@ const Products: React.FC = () => {
             seen in our community and are motivated to solve.
           </p>
         </div>
-        <div className="mt-8 md:mt-0 md:ml-8">
+        <div className="mt-8 md:mt-0 md:ml-8 md:mb-0 mb-24 ">
           <Image
             src="/images/products.svg"
             alt="products.svg"
@@ -33,7 +33,7 @@ const Products: React.FC = () => {
         <h3 className="text-2xl font-semibold my-10 text-gray-800 text-center">
           Featured
         </h3>
-        <div className="space-y-8 mb-48">
+        <div className="space-y-8 md:mb-48 mb-24 my-5">
           {featuredProjects.map((project, index) => (
             <FeaturedProject
               key={index}
