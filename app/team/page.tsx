@@ -15,7 +15,7 @@ const Team: React.FC = () => {
           <p className="text-md my-5 text-gray-700">
             Our team builds each app from the ground up. Every
             year, we recruit a diverse team of engineers, designers, and leaders to
-            further our mission of improving the lives of the MIT community. We
+            further our mission of promoting full-stack development within MIT and beyond. We
             ensure that all members have the unique opportunity to develop their
             technical and soft skills through practical projects that have real
             impact.
