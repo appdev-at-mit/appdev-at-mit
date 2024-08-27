@@ -107,21 +107,24 @@ export default function Home() {
       {/* Section 3 */}
       <section className="bg-light-blue px-6 py-12">
         <div className="max-w-4xl mx-auto text-left">
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            What we do
-          </h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">What we do</h2>
           <p className="text-lg mb-8 text-center leading-relaxed">
+            Our mission is to foster a community of full stack developers,
+            provide members with opportunities to cultivate their skills through
+            impactful hands-on projects, and promote full stack development in
+            the greater Cambridge community. <br></br><br></br>
             Interested in contributing to our upcoming projects? Have a project
-            idea of your own? <br></br>
-            Full Stack @ MIT is a student-run club that provides{" "}
+            idea of your own? <br></br><br></br>
+            We provides{" "}
             <span className="bg-salmon font-bold">full funding</span> to its
             members for creating <br></br>
             <span className="bg-salmon font-bold">software-based products</span>
-            . Work with your friends and other club members to create software
-            meant for the MIT community or a broader audience.
+            . Work with your friends and other club members to create software,
+            whether that's meant for the MIT community or a broader consumer
+            audience.
             <br></br> <br></br>
-            Full Stack @ MIT hosts workshops for students who are new to web
-            development. Anyone can join!
+            {/* Full Stack @ MIT hosts workshops for students who are new to web
+            development. Anyone can join! */}
           </p>
         </div>
         <div className="text-center">

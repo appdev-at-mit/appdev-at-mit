@@ -93,7 +93,7 @@ const Navbar = () => {
               href="/products"
               className="block text-gray-900 px-4 py-2"
               onClick={() => handleLinkClick()}>
-                Products
+                Projects
             </Link>
             <Link
             href="/support"
