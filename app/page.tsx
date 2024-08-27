@@ -120,7 +120,7 @@ export default function Home() {
             members for creating <br></br>
             <span className="bg-salmon font-bold">software-based products</span>
             . Work with your friends and other club members to create software,
-            whether that's meant for the MIT community or a broader consumer
+            whether thats meant for the MIT community or a broader consumer
             audience.
             {/* Full Stack @ MIT hosts workshops for students who are new to web
             development. Anyone can join! */}
