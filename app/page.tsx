@@ -9,11 +9,11 @@ export default function Home() {
         <div className="flex items-center">
           <div className="relative mt-4 lg:mr-48">
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
-              Create <span className="text-dark-blue">software</span> <br />{" "}
-              solutions
+              Gain <span className="text-dark-blue">hands-on</span> <br />{" "}
+              software experience
             </h1>
             <p className="text-xl mb-8 text-gray-700">
-              for the MIT community and beyond
+              Join a community of passionate developers
             </p>
             <div>
               <Link href="/apply">
