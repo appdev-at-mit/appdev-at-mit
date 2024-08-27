@@ -115,10 +115,8 @@ export default function Home() {
             the greater Cambridge community. <br></br><br></br>
             Interested in contributing to our upcoming projects? Have a project
             idea of your own? <br></br><br></br>
-            We provide
-            <span className="bg-salmon font-bold"> full funding</span> to
-            members for creating <br></br>
-            <span className="bg-salmon font-bold">software-based products</span>
+            We provide <span className="bg-salmon font-bold">full funding</span> to
+            members for creating <span className="bg-salmon font-bold">software-based products</span>
             . Work with your friends and other club members to create software,
             whether that&apos;s meant for the MIT community or a broader consumer
             audience.
