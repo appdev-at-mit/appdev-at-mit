@@ -9,15 +9,15 @@ const Products: React.FC = () => {
     <div className="min-h-screen flex flex-col xl:mx-64 lg:mx-48 md:mx-32 mx-6 xl:my-20 my-10">
       <div className="flex flex-col md:flex-row items-center">
         <div className="text-left max-w-2xl">
-          <h2 className="text-4xl font-bold my-3 text-gray-800">Products</h2>
+          <h2 className="text-4xl font-bold my-3 text-gray-800">Projects</h2>
           <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
-            To better the MIT community
+            To not only foster skills, but create impact
           </h3>
           <p className="text-md my-5 text-gray-700">
             Our products are our pride and joy. We&apos;re building apps to help
             students plan their academic career, find places to live, get around
             campus, and so much more. Each app is inspired by a problem we&apos;ve
-            seen in our community and are motivated to solve.
+            seen in the world and are motivated to solve.
           </p>
         </div>
         <div className="mt-8 md:mt-0 md:ml-8 md:mb-0 mb-24 ">
