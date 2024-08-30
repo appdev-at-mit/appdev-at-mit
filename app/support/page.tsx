@@ -151,7 +151,7 @@ export default function Support() {
 
       <p className="mt-8 text-center">
         We’re open to discussing further methods of collaboration - reach out to
-        us at fullstack@mit.edu!
+        us at contact@mitfullstack.org!
       </p>
     </div>
   );
