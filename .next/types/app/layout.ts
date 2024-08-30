@@ -1,4 +1,4 @@
-// File: C:\Users\jxwan\FullStack\website-frontend\app\layout.tsx
+// File: /Users/haileypan/Documents/GitHub/full-stack-at-mit/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
