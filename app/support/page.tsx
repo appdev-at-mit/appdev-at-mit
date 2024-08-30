@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import {
   Table,
   TableHeader,
@@ -188,10 +189,13 @@ export default function Support() {
           </TableBody>
         </Table>
       </div>
-      <a href="sponsorship_packet.pdf">Sponsorship packet</a>
+      <Link href="/sponsorship_packet.pdf">
+                <button className="bg-white text-gray-700 text-lg border-2 border-gray-700 w-50 px-3 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+                  View Sponsorship Packet
+                </button>
+              </Link>
       <p className="mt-8 text-center">
-        We’re open to discussing further methods of collaboration - reach out to
-        us at contact@mitfullstack.org!
+        To sponsor, reach out to us at contact@mitfullstack.org!
       </p>
     </div>
   );
