@@ -39,7 +39,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Sejal Rathi",
     roles: ["Backend Engineer", "Frontend Engineer"],
-    year: "2027",
+    year: "2026",
     imageSrc: "/people/temp-pic.jpg",
   },
 ];
