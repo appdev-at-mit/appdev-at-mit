@@ -22,10 +22,10 @@ const FormPage = () => {
           Want to learn more before applying?
         </h2>
         <p className="text-center text-gray-700 mb-5">
-          Attend one of our info sessions:
+          Attend our info session:
         </p>
         <ul className="list-decimal list-inside text-gray-700 mt-4 mx-5">
-          <li className="my-3">
+          {/* <li className="my-3">
             <span className="font-semibold">
               <a href={sipbLink} className="text-blue-600 underline">
                 MIT SIPB Interest Meeting
@@ -40,13 +40,13 @@ const FormPage = () => {
               * Though this is for general SIPB, we will talk a bit about Full
               Stack too.
             </p>
-          </li>
+          </li> */}
           <li className="my-3">
             <span className="font-semibold">
               Full Stack @ MIT Official Interest Meeting
             </span>
             <br />
-            This week (TBD)
+            Friday 5:30-6 PM in 1-135
             <br />
             <span className="italic">
               Fill out our{" "}
