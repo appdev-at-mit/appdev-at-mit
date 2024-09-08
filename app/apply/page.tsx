@@ -37,7 +37,7 @@ const FormPage = () => {
             <span className="italic">Location: W20-557 (5th floor, Stud)</span>
             <br />
             <p className="text-sm text-gray-500 mt-2">
-              * Though this is for general SIPB, we'll talk a bit about Full
+              * Though this is for general SIPB, we will talk a bit about Full
               Stack too.
             </p>
           </li>
