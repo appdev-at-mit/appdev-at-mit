@@ -1,3 +1,7 @@
 {
-  "/team/page": "app/team/page.js"
+  "/team/page": "app/team/page.js",
+  "/products/page": "app/products/page.js",
+  "/support/page": "app/support/page.js",
+  "/page": "app/page.js",
+  "/apply/page": "app/apply/page.js"
 }
