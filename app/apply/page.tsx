@@ -53,11 +53,11 @@ const FormPage = () => {
               <a href={interestFormLink} className="text-blue-600 underline">
                 interest form
               </a>{" "}
-              to stay updated on the specific time.
+              to get on our mailing list.
             </span>
             <br />
             <p className="text-sm text-gray-500 mt-2">
-              * Stay tuned for pizza and boba!
+              * Look forward to pizza and boba!
             </p>
           </li>
         </ul>
