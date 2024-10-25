@@ -8,40 +8,47 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Hailey Pan",
-    roles: ["Backend Engineer", "Frontend Engineer"],
+    roles: ["Co-President", "Backend Engineer", "Frontend Engineer"],
     year: "2027",
     imageSrc: "/people/hailey-pan.jpg",
   },
   {
     name: "Josie Wang",
-    roles: ["Backend Engineer", "Frontend Engineer"],
+    roles: ["Co-President", "Backend Engineer", "Frontend Engineer"],
     year: "2027",
     imageSrc: "/people/josie-wang.jpg",
   },
   {
     name: "Kaitlyn Zhang",
-    roles: ["Backend Engineer", "Frontend Engineer"],
+    roles: ["Vice President", "Frontend Engineer"],
     year: "2027",
     imageSrc: "/people/kaitlyn-zhang.png",
   },
   {
+    name: "Sejal Rathi",
+    roles: ["Tech Chair", "Backend Engineer", "Frontend Engineer"],
+    year: "2026",
+    imageSrc: "/people/sejal-rathi.png",
+  },
+  {
     name: "Andrew Yuan",
-    roles: ["Backend Engineer", "Frontend Engineer"],
+    roles: ["Tech Chair", "Backend Engineer", "Frontend Engineer"],
     year: "2027",
     imageSrc: "/people/andrew-yuan.png",
   },
+  // {
+  //   name: "Sophie Wang",
+  //   roles: ["Backend Engineer", "Frontend Engineer"],
+  //   year: "2027",
+  //   imageSrc: "/people/sophie-wang.JPG",
+  // },
   {
-    name: "Sophie Wang",
-    roles: ["Backend Engineer", "Frontend Engineer"],
-    year: "2027",
-    imageSrc: "/people/sophie-wang.JPG",
+    name: "Rebecca Xiong",
+    roles: ["Finance Chair", "Business/Marketing"],
+    year: "2028",
+    imageSrc: "/people/rebecca-xiong.jpg",
   },
-  {
-    name: "Sejal Rathi",
-    roles: ["Backend Engineer", "Frontend Engineer"],
-    year: "2026",
-    imageSrc: "/people/temp-pic.jpg",
-  },
+  
 ];
 
 export default teamMembers;

@@ -22,12 +22,12 @@ const Team: React.FC = () => {
           </p>
         </div>
         <div className="mt-8 md:mt-0 md:ml-8">
-          <Image
+          {/* <Image
             src="/images/collaboration.svg"
             alt="collaboration.svg"
             width={600}
             height={250}
-          />
+          /> */}
         </div>
       </div>
 
@@ -41,17 +41,18 @@ const Team: React.FC = () => {
           growing.
         </p>
 
-        <div className="grid gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((member, index) => (
-            <TeamMember
-              key={index}
-              name={member.name}
-              roles={member.roles}
-              year={member.year}
-              imageSrc={member.imageSrc}
-            />
-          ))}
-        </div>
+        <div className="grid gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+  {teamMembers.map((member, index) => (
+    <TeamMember
+      key={index}
+      name={member.name}
+      roles={member.roles}
+      year={member.year}
+      imageSrc={member.imageSrc}
+    />
+  ))}
+</div>
+
       </div>
       <div className="items-center text-center md:mt-32 mt-20">
         <h3 className="text-2xl font-semibold my-3 text-gray-800">
