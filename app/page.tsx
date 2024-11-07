@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, MutableRefObject } from "react";
 
 // Custom hook for scroll animations
-const useScrollAnimation = () => {
-  const ref = useRef(null);
+const useScrollAnimation = (): [MutableRefObject<HTMLElement | null>, boolean] => {
+  const ref = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -50,11 +50,12 @@ export default function Home() {
       {/* Section 1 */}
       <section
         ref={section1Ref}
-        className={`flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center 
-          }`}
+        className={`flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center opacity-0 transition-opacity duration-1000 ${
+          section1Visible ? "animate-fadeIn" : ""
+        }`}
       >
         <div className="flex items-center">
-          <div className={`relative mt-4 lg:mr-48 `}>
+          <div className="relative mt-4 lg:mr-48">
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
               Gain <span className="text-dark-blue">hands-on</span> <br />{" "}
               software experience
@@ -99,12 +100,13 @@ export default function Home() {
       {/* Section 2 */}
       <section
         ref={section2Ref}
-        className={`text-center px-6 py-12 
-          `}
+        className={`text-center px-6 py-12 opacity-0 transition-opacity duration-1000 ${
+          section2Visible ? "animate-fadeIn" : ""
+        }`}
       >
         <h2 className="text-3xl font-bold mb-6">Upcoming Projects</h2>
         <div className="flex flex-wrap justify-center mb-8">
-          <div className={`m-4`}>
+          <div className={`m-4 ${section2Visible ? "animate-fadeIn" : ""}`}>
             <Image
               src="/images/housing.svg"
               alt="Project 2"
@@ -119,7 +121,7 @@ export default function Home() {
               connect you with other MIT students living in the same area.
             </p>
           </div>
-          <div className={`m-4`}>
+          <div className={`m-4 ${section2Visible ? "animate-fadeIn delay-200" : ""}`}>
             <Image
               src="/images/queue.svg"
               alt="Project 1"
@@ -134,7 +136,7 @@ export default function Home() {
               and if office hours have changed locations or been canceled.
             </p>
           </div>
-          <div className={`m-4`}>
+          <div className={`m-4 ${section2Visible ? "animate-fadeIn delay-400" : ""}`}>
             <Image
               src="/images/rideshare.svg"
               alt="Project 3"
@@ -160,8 +162,9 @@ export default function Home() {
       {/* Section 3 */}
       <section
         ref={section3Ref}
-        className={`bg-light-blue px-6 py-12 transition-opacity duration-1000 
-          `}
+        className={`bg-light-blue px-6 py-12 opacity-0 transition-opacity duration-1000 ${
+          section3Visible ? "animate-slideUp" : ""
+        }`}
       >
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="text-3xl font-bold mb-6 text-center">What we do</h2>
@@ -175,7 +178,7 @@ export default function Home() {
         <div className="text-center">
           <Link href="/apply">
             <button
-              className={`bg-light-blue text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-white hover:text-white transition-colors duration-300 animate-pulse ${
+              className={`bg-light-blue text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-white hover:text-white transition-colors duration-300 ${
                 section3Visible ? "animate-scaleIn" : ""
               }`}
             >
@@ -188,17 +191,16 @@ export default function Home() {
       {/* Sponsors Section */}
       <section
         ref={sponsorsRef}
-        className={`px-4 py-8 md:px-6 md:py-12 transition-opacity duration-1000 
-         `}
+        className={`px-4 py-8 md:px-6 md:py-12 opacity-0 transition-opacity duration-1000 ${
+          sponsorsVisible ? "animate-fadeUp" : ""
+        }`}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 md:mb-8">
           Our Sponsors
         </h2>
         <div className="flex flex-wrap justify-center items-center mt-6 md:mt-14 space-x-8 md:space-x-12">
           <div
-            className={`w-44 md:w-72 ${
-              sponsorsVisible ? "fade-up-animation" : ""
-            }`}
+            className={`w-44 md:w-72 ${sponsorsVisible ? "fade-up-animation" : ""}`}
           >
             <Link href="https://www.convex.dev/" target="_blank">
               <Image
@@ -211,9 +213,7 @@ export default function Home() {
             </Link>
           </div>
           <div
-            className={`w-36 md:w-56 ${
-              sponsorsVisible ? "fade-up-animation delay-200" : ""
-            }`}
+            className={`w-36 md:w-56 ${sponsorsVisible ? "fade-up-animation delay-200" : ""}`}
           >
             <Link href="https://www.warp.dev/" target="_blank">
               <Image
@@ -231,8 +231,9 @@ export default function Home() {
       {/* Section 4 */}
       <section
         ref={section4Ref}
-        className={`px-6 pt-6 pb-12 transition-opacity duration-1000 
-          `}
+        className={`px-6 pt-6 pb-12 opacity-0 transition-opacity duration-1000 ${
+          section4Visible ? "animate-slideUp" : ""
+        }`}
       >
         <div className="text-center">
           <p className="text-lg mb-8">
@@ -240,7 +241,7 @@ export default function Home() {
             funding for student projects.
           </p>
           <Link href="/support">
-            <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+            <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300 animate-pulse">
               Sponsor us
             </button>
           </Link>
