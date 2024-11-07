@@ -112,14 +112,19 @@ export default function Home() {
             Our mission is to foster a community of full stack developers,
             provide members with opportunities to cultivate their skills through
             impactful hands-on projects, and promote full stack development in
-            the greater Cambridge community. <br></br><br></br>
+            the greater Cambridge community. <br></br>
+            <br></br>
             Interested in contributing to our upcoming projects? Have a project
-            idea of your own? <br></br><br></br>
-            We provide <span className="bg-salmon font-bold">full funding</span> to
-            members for creating <span className="bg-salmon font-bold">software-based products</span>
+            idea of your own? <br></br>
+            <br></br>
+            We provide <span className="bg-salmon font-bold">
+              full funding
+            </span>{" "}
+            to members for creating{" "}
+            <span className="bg-salmon font-bold">software-based products</span>
             . Work with your friends and other club members to create software,
-            whether that&apos;s meant for the MIT community or a broader consumer
-            audience.
+            whether that&apos;s meant for the MIT community or a broader
+            consumer audience.
             {/* Full Stack @ MIT hosts workshops for students who are new to web
             development. Anyone can join! */}
           </p>
@@ -132,9 +137,38 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
+      {/* Sponsors Section */}
+      <section className="px-4 py-8 md:px-6 md:py-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 md:mb-8">
+          Our Sponsors
+        </h2>
+        <div className="flex flex-wrap justify-center items-center mt-6 md:mt-14 space-x-8 md:space-x-12">
+          <div className="w-44 md:w-72">
+            <Link href="https://www.convex.dev/" target="_blank">
+              <Image
+                src="/images/convex-logo.svg"
+                alt="Convex Logo"
+                width={350}
+                height={200}
+                className="mx-auto"
+              />
+            </Link>
+          </div>
+          <div className="w-36 md:w-56">
+            <Link href="https://www.warp.dev/" target="_blank">
+              <Image
+                src="/images/warp-logo.png"
+                alt="Warp Logo"
+                width={230}
+                height={200}
+                className="mx-auto"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* Section 4 */}
-      <section className="px-6 py-12">
+      <section className="px-6 pt-6 pb-12">
         <div className="text-center">
           <p className="text-lg mb-8">
             Like what we do? Full Stack @ MIT needs your support to provide full
