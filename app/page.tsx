@@ -215,7 +215,7 @@ export default function Home() {
               sponsorsVisible ? "fade-up-animation delay-200" : ""
             }`}
           >
-            <Link href="https://www.warp.dev/" target="_blank">
+            <Link href="https://www.warp.dev/?utm_source=mit_fullstack&utm_medium=newsletter&utm_campaign=fullstack_20241107" target="_blank">
               <Image
                 src="/images/warp-logo.png"
                 alt="Warp Logo"
