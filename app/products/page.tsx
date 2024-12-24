@@ -22,10 +22,11 @@ const Products: React.FC = () => {
         </div>
         <div className="mt-8 md:mt-0 md:ml-8 md:mb-0 mb-24 ">
           <Image
-            src="/images/products.svg"
-            alt="products.svg"
+            src="/images/presenter2.JPG"
+            alt="presentation.JPG"
             width={600}
             height={250}
+            className="rounded-md"
           />
         </div>
       </div>
@@ -41,13 +42,14 @@ const Products: React.FC = () => {
               description={project.description}
               link={project.link}
               imageUrl={project.imageUrl}
+              team={project.team}
               isReversed={index % 2 === 1} // alternate left-right
             />
           ))}
         </div>
 
         <h3 className="text-2xl font-semibold my-10 text-gray-800 text-center">
-          Current Projects
+          Upcoming Projects
         </h3>
         <div className="grid md:grid-cols-2 gap-8 my-5">
           {currentProjects.map((project, index) => (
@@ -57,7 +59,6 @@ const Products: React.FC = () => {
               description={project.description}
               link={project.link}
               imageUrl={project.imageUrl}
-              team={project.team}
             />
           ))}
         </div>

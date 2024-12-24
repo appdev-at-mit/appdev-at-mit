@@ -13,6 +13,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({
   description,
   link,
   imageUrl,
+  team,
   isReversed,
 }) => {
   return (
@@ -30,6 +31,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({
       <div className="w-full md:w-1/2">
         <h4 className={`text-2xl font-semibold text-gray-800 mb-2 text-left`}>{title}</h4>
         <p className={`text-md text-gray-800 mb-4 text-left }`}>{description}</p>
+        <p className={`text-md text-gray-400 mb-4 text-left }`}>{team}</p>
         <a href={link} className={`text-blue-500 underline ${isReversed ? 'text-right' : 'text-left'}`}>
           {link}
         </a>

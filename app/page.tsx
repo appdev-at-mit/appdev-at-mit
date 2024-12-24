@@ -77,20 +77,13 @@ export default function Home() {
           </div>
           <div className="relative hidden lg:block">
             <Image
-              src="/images/site.svg"
-              alt="site.svg"
-              width={540}
-              height={360}
-              className="drop-shadow-lg"
-            />
-            <Image
-              src="/images/code.svg"
-              alt="code.svg"
-              width={375}
-              height={250}
-              className={`drop-shadow-lg absolute top-36 -left-20 ${
+              src="/images/fullclub2.JPG"
+              alt="Club Photo"
+              width={500}
+              height={300}
+              className={`drop-shadow-lg rounded-md ${
                 section1Visible ? "animate-float" : ""
-              }`}
+              } shadow-[0px_0px_15px_2px_rgba(100,201,205,0.7)]`}
             />
           </div>
         </div>
@@ -99,54 +92,53 @@ export default function Home() {
       {/* Section 2 */}
       <section
         ref={section2Ref}
-        className={`text-center px-6 py-12 
-          `}
+        className="text-center px-6 py-12"
       >
-        <h2 className="text-3xl font-bold mb-6">Upcoming Projects</h2>
-        <div className="flex flex-wrap justify-center mb-8">
-          <div className={`m-4`}>
-            <Image
-              src="/images/housing.svg"
-              alt="Project 2"
-              width={375}
-              height={250}
-              className="mb-8 drop-shadow-lg"
-            />
+        <h2 className="text-3xl font-bold mb-6">Current Projects</h2>
+        <div className="flex flex-wrap justify-between mb-6 md:flex-row">
+          <div className="w-full md:w-1/3 p-6">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/fullhouse.png"
+                alt="Project 1"
+                width={375}
+                height={250}
+                className="drop-shadow-lg"
+              />
+            </div>
             <h4 className="text-xl font-semibold m-2">Find summer housing</h4>
             <p className="text-base font-light">
-              Are you looking for summer housing near MIT or your internship?
-              This project will let you find affordable accommodations and
-              connect you with other MIT students living in the same area.
+              Are you looking for summer housing near MIT or your internship? This project will let you find affordable accommodations and connect you with other MIT students living in the same area.
             </p>
           </div>
-          <div className={`m-4`}>
-            <Image
-              src="/images/queue.svg"
-              alt="Project 1"
-              width={375}
-              height={250}
-              className="mb-8 drop-shadow-lg"
-            />
-            <h4 className="text-xl font-semibold m-2">OH queue</h4>
+          <div className="w-full md:w-1/3 p-6">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/marketplace.png"
+                alt="Project 2"
+                width={375}
+                height={250}
+                className="drop-shadow-lg"
+              />
+            </div>
+            <h4 className="text-xl font-semibold m-2">College Marketplace</h4>
             <p className="text-base font-light">
-              Professors and TAs can use the OH queue website to keep track of
-              students waiting in the OH. Students can see how long the queue is
-              and if office hours have changed locations or been canceled.
+              College Marketplace is an online platform designed for students to buy, sell, and showcase products and services. Search for on-campus deals with ease!
             </p>
           </div>
-          <div className={`m-4`}>
-            <Image
-              src="/images/rideshare.svg"
-              alt="Project 3"
-              width={375}
-              height={250}
-              className="mb-8 drop-shadow-lg"
-            />
-            <h4 className="text-xl font-semibold m-2">Carpool / Rideshare</h4>
+          <div className="w-full md:w-1/3 p-6">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/clubs1.jpeg"
+                alt="Project 3"
+                width={375}
+                height={250}
+                className="drop-shadow-lg"
+              />
+            </div>
+            <h4 className="text-xl font-semibold m-2">MIT Clubs</h4>
             <p className="text-base font-light">
-              Uber/Lyft to the airport is too expensive? Find other MIT students
-              who are going to the same location as you and share a ride with
-              them.
+              There are too many clubs and organizations to keep track of. Browse MIT's full list of clubs, and filter by club size, focus, and recruiting status to find your fit.
             </p>
           </div>
         </div>
@@ -171,6 +163,15 @@ export default function Home() {
             impactful hands-on projects, and promote full stack development in
             the greater Cambridge community.
           </p>
+        </div>
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/images/presenter6.JPG"
+            alt="What we do"
+            width={450}
+            height={300}
+            className="drop-shadow-lg rounded-md"
+          />
         </div>
         <div className="text-center">
           <Link href="/apply">
