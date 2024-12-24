@@ -19,12 +19,6 @@ const teamMembers: TeamMember[] = [
     imageSrc: "/people/josie-wang.jpg",
   },
   {
-    name: "Kaitlyn Zhang",
-    roles: ["Vice President", "Frontend Engineer"],
-    year: "2027",
-    imageSrc: "/people/kaitlyn-zhang.png",
-  },
-  {
     name: "Sejal Rathi",
     roles: ["Tech Chair", "Backend Engineer", "Frontend Engineer"],
     year: "2026",

@@ -22,12 +22,13 @@ const Team: React.FC = () => {
           </p>
         </div>
         <div className="mt-8 md:mt-0 md:ml-8">
-          {/* <Image
-            src="/images/collaboration.svg"
-            alt="collaboration.svg"
+          <Image
+            src="/images/social3.JPG"
+            alt="social.JPG"
             width={600}
             height={250}
-          /> */}
+            className="rounded-md"
+          />
         </div>
       </div>
 
