@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import {
   Table,
   TableHeader,
@@ -36,8 +37,8 @@ const columns = [
 const rows = [
   {
     key: "1",
-    benefit: "Recognition on our website",
-    subtitle: "Logo placement on sponsorship materials",
+    benefit: "Logo on website",
+    subtitle: "",
     bronze: "✅",
     silver: "✅",
     gold: "✅",
@@ -45,8 +46,8 @@ const rows = [
   },
   {
     key: "2",
-    benefit: "Campus-wide publicity",
-    subtitle: "Support and usage of company products on campus",
+    benefit: "Resume book access",
+    subtitle: "",
     bronze: "✅",
     silver: "✅",
     gold: "✅",
@@ -54,37 +55,77 @@ const rows = [
   },
   {
     key: "3",
-    benefit: "Resume book access",
-    subtitle: "Access to our talent pipeline for recruitment",
-    bronze: "-",
+    benefit: "Company feature in our monthly newsletter",
+    subtitle: "",
+    bronze: "✅",
     silver: "✅",
     gold: "✅",
     platinum: "✅",
   },
   {
     key: "4",
-    benefit: "Flagship Initiative Co-Sponsor",
-    subtitle: "Company-specific publicity and swag distribution",
+    benefit: "Logo on club t-shirts",
+    subtitle: "",
     bronze: "-",
-    silver: "-",
+    silver: "✅",
     gold: "✅",
     platinum: "✅",
   },
   {
     key: "5",
-    benefit: "Host a company event",
+    benefit: "Advertisement at our events",
     subtitle:
-      "One per semester; Includes workshops, hackathons, speaker panels",
+      "",
+    bronze: "-",
+    silver: "✅",
+    gold: "✅",
+    platinum: "✅",
+  },
+  {
+    key: "6",
+    benefit: "Option to host 1 event",
+    subtitle:
+      "",
     bronze: "-",
     silver: "-",
     gold: "✅",
     platinum: "✅",
   },
   {
-    key: "6",
-    benefit: "Host multiple events",
+    key: "7",
+    benefit: "Distribution of company swag",
     subtitle:
-      "Up to three per semester with priority scheduling; Every additional event costs $200",
+      "",
+    bronze: "-",
+    silver: "-",
+    gold: "✅",
+    platinum: "✅",
+  },
+  {
+    key: "8",
+    benefit: "Logo on club banner",
+    subtitle:
+      "",
+    bronze: "-",
+    silver: "-",
+    gold: "✅",
+    platinum: "✅",
+  },
+  {
+    key: "9",
+    benefit: "Option to host up to 5 events",
+    subtitle:
+      "",
+    bronze: "-",
+    silver: "-",
+    gold: "-",
+    platinum: "✅",
+  },
+  {
+    key: "10",
+    benefit: "Unlimited coffee chat slots with our members",
+    subtitle:
+      "",
     bronze: "-",
     silver: "-",
     gold: "-",
@@ -137,9 +178,9 @@ export default function Support() {
                   <TableCell className="text-center">
                     <div>
                       <p>{getKeyValue(item, columnKey)}</p>
-                      {columnKey === "benefit" && (
+                      {/* {columnKey === "benefit" && (
                         <p className="text-sm text-gray-500">{item.subtitle}</p>
-                      )}
+                      )} */}
                     </div>
                   </TableCell>
                 )}
@@ -148,10 +189,13 @@ export default function Support() {
           </TableBody>
         </Table>
       </div>
-
+      <Link href="/sponsorship_packet.pdf">
+                <button className="bg-white text-gray-700 text-lg border-2 border-gray-700 w-50 px-3 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+                  View Sponsorship Packet
+                </button>
+              </Link>
       <p className="mt-8 text-center">
-        We’re open to discussing further methods of collaboration - reach out to
-        us at fullstack@mit.edu!
+        To sponsor, reach out to us at contact@mitfullstack.org!
       </p>
     </div>
   );

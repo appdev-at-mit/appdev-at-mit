@@ -1,13 +1,60 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState, RefObject } from "react";
+
+// Custom hook for scroll animations with proper typing
+const useScrollAnimation = (): [RefObject<HTMLElement>, boolean] => {
+  const ref = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "50px",
+      }
+    );
+
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  return [ref, isVisible];
+};
 
 export default function Home() {
+  const [section1Ref, section1Visible] = useScrollAnimation();
+  const [section2Ref, section2Visible] = useScrollAnimation();
+  const [section3Ref, section3Visible] = useScrollAnimation();
+  const [sponsorsRef, sponsorsVisible] = useScrollAnimation();
+  const [section4Ref, section4Visible] = useScrollAnimation();
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Section 1 */}
-      <section className="flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center">
+      <section
+        ref={section1Ref}
+        className={`flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center 
+          }`}
+      >
         <div className="flex items-center">
-          <div className="relative mt-4 lg:mr-48">
+          <div className={`relative mt-4 lg:mr-48 `}>
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
               Gain <span className="text-dark-blue">hands-on</span> <br />{" "}
               software experience
@@ -15,14 +62,14 @@ export default function Home() {
             <p className="text-xl mb-8 text-gray-700">
               Join a community of passionate developers
             </p>
-            <div className="flex space-x-4">
+            <div className={section1Visible ? "animate-scaleIn" : ""}>
               <Link href="/apply">
-                <button className="bg-dark-blue text-white text-xl w-36 py-2 rounded-full font-medium hover:bg-hover-blue transition-colors duration-300">
+                <button className="bg-dark-blue text-white text-xl w-36 py-2 mr-4 rounded-full font-medium hover:bg-hover-blue transition-colors duration-300 animate-bounce">
                   Join us
                 </button>
               </Link>
               <Link href="/products">
-                <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-36 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+                <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-36 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300 animate-bounce">
                   Products
                 </button>
               </Link>
@@ -41,17 +88,23 @@ export default function Home() {
               alt="code.svg"
               width={375}
               height={250}
-              className="drop-shadow-lg absolute top-36 -left-20"
+              className={`drop-shadow-lg absolute top-36 -left-20 ${
+                section1Visible ? "animate-float" : ""
+              }`}
             />
           </div>
         </div>
       </section>
 
       {/* Section 2 */}
-      <section className="text-center px-6 py-12">
+      <section
+        ref={section2Ref}
+        className={`text-center px-6 py-12 
+          `}
+      >
         <h2 className="text-3xl font-bold mb-6">Upcoming Projects</h2>
         <div className="flex flex-wrap justify-center mb-8">
-          <div className="m-4 w-full sm:w-auto max-w-xs">
+          <div className={`m-4`}>
             <Image
               src="/images/housing.svg"
               alt="Project 2"
@@ -66,7 +119,7 @@ export default function Home() {
               connect you with other MIT students living in the same area.
             </p>
           </div>
-          <div className="m-4 w-full sm:w-auto max-w-xs">
+          <div className={`m-4`}>
             <Image
               src="/images/queue.svg"
               alt="Project 1"
@@ -81,7 +134,7 @@ export default function Home() {
               and if office hours have changed locations or been canceled.
             </p>
           </div>
-          <div className="m-4 w-full sm:w-auto max-w-xs">
+          <div className={`m-4`}>
             <Image
               src="/images/rideshare.svg"
               alt="Project 3"
@@ -98,43 +151,89 @@ export default function Home() {
           </div>
         </div>
         <Link href="/products">
-          <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-60 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300">
+          <button className="bg-white text-gray-700 text-xl border-2 border-gray-700 w-60 py-2 rounded-full font-medium hover:border-dark-blue hover:text-dark-blue transition-colors duration-300 animate-pulse">
             See more projects
           </button>
         </Link>
       </section>
 
       {/* Section 3 */}
-      <section className="bg-light-blue px-6 py-12 w-full">
+      <section
+        ref={section3Ref}
+        className={`bg-light-blue px-6 py-12 transition-opacity duration-1000 
+          `}
+      >
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="text-3xl font-bold mb-6 text-center">What we do</h2>
           <p className="text-lg mb-8 text-center leading-relaxed">
             Our mission is to foster a community of full stack developers,
             provide members with opportunities to cultivate their skills through
             impactful hands-on projects, and promote full stack development in
-            the greater Cambridge community. <br></br><br></br>
-            Interested in contributing to our upcoming projects? Have a project
-            idea of your own? <br></br><br></br>
-            We provide <span className="bg-salmon font-bold">full funding</span> to
-            members for creating <span className="bg-salmon font-bold">software-based products</span>
-            . Work with your friends and other club members to create software,
-            whether that&apos;s meant for the MIT community or a broader consumer
-            audience.
-            {/* Full Stack @ MIT hosts workshops for students who are new to web
-            development. Anyone can join! */}
+            the greater Cambridge community.
           </p>
         </div>
         <div className="text-center">
           <Link href="/apply">
-            <button className="bg-light-blue text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-white hover:text-white transition-colors duration-300">
+            <button
+              className={`bg-light-blue text-gray-700 text-xl border-2 border-gray-700 w-48 py-2 rounded-full font-medium hover:border-white hover:text-white transition-colors duration-300 animate-pulse ${
+                section3Visible ? "animate-scaleIn" : ""
+              }`}
+            >
               Apply here
             </button>
           </Link>
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section
+        ref={sponsorsRef}
+        className={`px-4 py-8 md:px-6 md:py-12 transition-opacity duration-1000 
+         `}
+      >
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 md:mb-8">
+          Our Sponsors
+        </h2>
+        <div className="flex flex-wrap justify-center items-center mt-6 md:mt-14 space-x-8 md:space-x-12">
+          <div
+            className={`w-44 md:w-72 ${
+              sponsorsVisible ? "fade-up-animation" : ""
+            }`}
+          >
+            <Link href="https://www.convex.dev/" target="_blank">
+              <Image
+                src="/images/convex-logo.svg"
+                alt="Convex Logo"
+                width={350}
+                height={200}
+                className="mx-auto"
+              />
+            </Link>
+          </div>
+          <div
+            className={`w-36 md:w-56 ${
+              sponsorsVisible ? "fade-up-animation delay-200" : ""
+            }`}
+          >
+            <Link href="https://www.warp.dev/?utm_source=mit_fullstack&utm_medium=newsletter&utm_campaign=fullstack_20241107" target="_blank">
+              <Image
+                src="/images/warp-logo.png"
+                alt="Warp Logo"
+                width={230}
+                height={200}
+                className="mx-auto"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Section 4 */}
-      <section className="px-6 py-12">
+      <section
+        ref={section4Ref}
+        className={`px-6 pt-6 pb-12 transition-opacity duration-1000 
+          `}
+      >
         <div className="text-center">
           <p className="text-lg mb-8">
             Like what we do? Full Stack @ MIT needs your support to provide full
