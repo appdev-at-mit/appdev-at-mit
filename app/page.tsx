@@ -90,10 +90,7 @@ export default function Home() {
       </section>
 
       {/* Section 2 */}
-      <section
-        ref={section2Ref}
-        className="text-center px-6 py-12"
-      >
+      <section ref={section2Ref} className="text-center px-6 py-12">
         <h2 className="text-3xl font-bold mb-6">Current Projects</h2>
         <div className="flex flex-wrap justify-between mb-6 md:flex-row">
           <div className="w-full md:w-1/3 p-6">
@@ -108,7 +105,9 @@ export default function Home() {
             </div>
             <h4 className="text-xl font-semibold m-2">Find summer housing</h4>
             <p className="text-base font-light">
-              Are you looking for summer housing near MIT or your internship? This project will let you find affordable accommodations and connect you with other MIT students living in the same area.
+              Are you looking for summer housing near MIT or your internship?
+              This project will let you find affordable accommodations and
+              connect you with other MIT students living in the same area.
             </p>
           </div>
           <div className="w-full md:w-1/3 p-6">
@@ -123,7 +122,9 @@ export default function Home() {
             </div>
             <h4 className="text-xl font-semibold m-2">College Marketplace</h4>
             <p className="text-base font-light">
-              College Marketplace is an online platform designed for students to buy, sell, and showcase products and services. Search for on-campus deals with ease!
+              College Marketplace is an online platform designed for students to
+              buy, sell, and showcase products and services. Search for
+              on-campus deals with ease!
             </p>
           </div>
           <div className="w-full md:w-1/3 p-6">
@@ -138,7 +139,9 @@ export default function Home() {
             </div>
             <h4 className="text-xl font-semibold m-2">MIT Clubs</h4>
             <p className="text-base font-light">
-              There are too many clubs and organizations to keep track of. Browse MIT's full list of clubs, and filter by club size, focus, and recruiting status to find your fit.
+              There are too many clubs and organizations to keep track of.
+              Browse MIT&apos;s full list of clubs, and filter by club size,
+              focus, and recruiting status to find your fit.
             </p>
           </div>
         </div>
@@ -216,7 +219,10 @@ export default function Home() {
               sponsorsVisible ? "fade-up-animation delay-200" : ""
             }`}
           >
-            <Link href="https://www.warp.dev/?utm_source=mit_fullstack&utm_medium=newsletter&utm_campaign=fullstack_20241107" target="_blank">
+            <Link
+              href="https://www.warp.dev/?utm_source=mit_fullstack&utm_medium=newsletter&utm_campaign=fullstack_20241107"
+              target="_blank"
+            >
               <Image
                 src="/images/warp-logo.png"
                 alt="Warp Logo"

@@ -1,11 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 interface CurrentProjectProps {
   title: string;
   description: string;
   link: string;
   imageUrl: string;
-  team: string;
 }
 
 const CurrentProject: React.FC<CurrentProjectProps> = ({
@@ -13,14 +13,15 @@ const CurrentProject: React.FC<CurrentProjectProps> = ({
   description,
   link,
   imageUrl,
-  team,
 }) => {
   return (
     <div className="flex flex-col md:flex-row items-center border p-4 rounded-lg shadow-lg hover:shadow-custom transition duration-300">
       <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-4 w-full md:w-1/3">
-        <img
+        <Image
           src={imageUrl}
           alt={title}
+          width={500}
+          height={300}
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
