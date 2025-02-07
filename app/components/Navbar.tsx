@@ -23,10 +23,10 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo-2.svg"
                   alt="Logo"
-                  width={256}
-                  height={128}
+                  width={75}
+                  height={75}
                   className="h-120 w-120"
                 />
               </Link>
