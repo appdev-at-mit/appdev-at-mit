@@ -161,10 +161,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="text-3xl font-bold mb-6 text-center">What we do</h2>
           <p className="text-lg mb-8 text-center leading-relaxed">
-            Our mission is to foster a community of full stack developers,
+            Our mission is to foster a community of mobile and web developers,
             provide members with opportunities to cultivate their skills through
-            impactful hands-on projects, and promote full stack development in
-            the greater Cambridge community.
+            impactful hands-on projects.
           </p>
         </div>
         <div className="flex justify-center mb-8">
@@ -243,7 +242,7 @@ export default function Home() {
       >
         <div className="text-center">
           <p className="text-lg mb-8">
-            Like what we do? Full Stack @ MIT needs your support to provide full
+            Like what we do? AppDev @ MIT needs your support to provide full
             funding for student projects.
           </p>
           <Link href="/support">
