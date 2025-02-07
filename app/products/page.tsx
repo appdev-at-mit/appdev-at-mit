@@ -6,8 +6,8 @@ import { featuredProjects } from "./projectDetails";
 
 const Products: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col xl:mx-32 lg:mx-24 md:mx-16 mx-6 xl:my-20 my-10">
-      <div className="flex flex-col md:flex-row items-center">
+    <div className="min-h-screen flex flex-col xl:mx-40 lg:mx-28 md:mx-16 mx-6 xl:my-20 my-10">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="text-left max-w-2xl">
           <h2 className="text-4xl font-bold my-3 text-gray-800">Projects</h2>
           <h3 className="text-xl font-bold mt-3 mb-5 text-gray-800">
@@ -16,17 +16,17 @@ const Products: React.FC = () => {
           <p className="text-md my-5 text-gray-700">
             Our products are our pride and joy. We&apos;re building apps to help
             students plan their academic career, find places to live, get around
-            campus, and so much more. Each app is inspired by a problem we&apos;ve
-            seen in the world and are motivated to solve.
+            campus, and so much more. Each app is inspired by a problem
+            we&apos;ve seen in the world and are motivated to solve.
           </p>
-        </div>
-        <div className="mt-8 md:mt-0 md:ml-8 md:mb-0 mb-24 ">
+        </div> 
+        <div className="mt-8 md:mt-0 md:ml-8 md:mb-0 mb-24 flex-shrink-0 hidden sm:block">
           <Image
             src="/images/presenter2.JPG"
             alt="presentation.JPG"
             width={600}
             height={250}
-            className="rounded-md"
+            className="rounded-md w-[600px] xl:w-[600px] lg:w-[500px] md:w-[400px] sm:w-[300px]"
           />
         </div>
       </div>
