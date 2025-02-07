@@ -18,15 +18,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white fixed top-0 left-0 right-0 z-50">
-        <div className="max-w-8xl md:mx-8 mx-2 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-8xl mx-auto px-6 xl:px-32 lg:px-24 md:px-16">
           <div className="flex justify-between h-20 items-center">
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/images/logo-2.svg"
+                  src="/images/logo.svg"
                   alt="Logo"
-                  width={75}
-                  height={75}
+                  width={256}
+                  height={128}
                   className="h-120 w-120"
                 />
               </Link>

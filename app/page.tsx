@@ -50,11 +50,10 @@ export default function Home() {
       {/* Section 1 */}
       <section
         ref={section1Ref}
-        className={`flex flex-wrap px-6 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center 
-          }`}
+        className="flex flex-wrap px-6 xl:px-32 lg:px-28 md:px-16 py-12 xl:mt-10 lg:mt-0 xl:mb-8 lg:mb-0 justify-center items-center"
       >
         <div className="flex items-center">
-          <div className={`relative mt-4 lg:mr-48 `}>
+          <div className={`relative mt-4 lg:mr-48 text-center lg:text-left`}>
             <h1 className="text-5xl font-extrabold mb-4 leading-normal">
               Gain <span className="text-dark-blue">hands-on</span> <br />{" "}
               software experience
@@ -90,8 +89,11 @@ export default function Home() {
       </section>
 
       {/* Section 2 */}
-      <section ref={section2Ref} className="text-center px-6 py-12">
-        <h2 className="text-3xl font-bold mb-6">Current Projects</h2>
+      <section
+        ref={section2Ref}
+        className="text-center px-6 xl:px-32 lg:px-24 md:px-16 py-12 my-8"
+      >
+        <h2 className="text-3xl font-bold mb-12">Current Projects</h2>
         <div className="flex flex-wrap justify-between mb-6 md:flex-row">
           <div className="w-full md:w-1/3 p-6">
             <div className="flex justify-center mb-8">

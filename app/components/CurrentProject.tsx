@@ -20,12 +20,12 @@ const CurrentProject: React.FC<CurrentProjectProps> = ({
         <Image
           src={imageUrl}
           alt={title}
-          width={500}
-          height={300}
+          width={800}
+          height={800}
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
-      <div className="md:ml-4 w-full">
+      <div className="md:ml-4 w-full md:w-2/3">
         <h4 className="text-2xl font-semibold text-gray-700 mb-2">{title}</h4>
         {/* <h6 className="text-md text-gray-600 mb-4">by {team}</h6> */}
         <p className="text-md text-gray-800 mb-4">{description}</p>
